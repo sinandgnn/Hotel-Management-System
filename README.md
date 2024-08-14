@@ -77,12 +77,19 @@ Rezervasyon Durumları:
 ### Veritabanı Yapılandırması
 
 
-Uygulamanızın çalışabilmesi için veritabanı bağlantı ayarlarını
+Uygulamanızın çalışabilmesi için veritabanı bağlantı ayarlarını ".env" dosyasında yapılandırmanız gerekmektedir.
 
-    src/main/resources/application.properties
+#### .env Dosyası İçeriği
 
-dosyasında yapılandırmanız gerekmektedir.
+    'DB_URL': Veritabanı bağlantı URL'si.
+    'DB_USERNAME': Veritabanı kullanıcı adı.
+    'DB_PASSWORD': Veritabanı şifresi.
 
+Örnek .env dosyası:
+   
+    DB_URL=jdbc:postgresql://localhost:5432/hotelmanagement
+    DB_USERNAME=postgres
+    DB_PASSWORD=123456
 
 
 ### Sunucuyu çalıştırın
